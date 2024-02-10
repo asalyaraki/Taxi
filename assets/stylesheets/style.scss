@@ -1,0 +1,946 @@
+%bt1 {
+    border: 2px solid green;
+}
+
+%bt2 {
+    border: 2px solid purple;
+}
+
+%bgt {
+    background-color: skyblue
+}
+
+.row {
+    height: 110vh;
+
+    // @extend %bt1;
+    >.para1 {
+        width: 100%;
+        height: 100%;
+        // @extend %bt2;
+        background-image: url(../img/avada-taxi-homepage-hero.jpg);
+        background-size: cover;
+        box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.63);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        >.row {
+            height: 100px;
+
+            // border: 2px solid white;
+            >header {
+                width: 100%;
+                height: 100px;
+
+                // @extend %bt1;
+                >.row {
+                    width: 100%;
+                    height: 100%;
+
+                    // border: 2px solid yellow;
+                    >* {
+                        height: 100%;
+                        // @extend %bt2;
+                    }
+
+                    >figure {
+                        width: 30%;
+                        display: flex;
+                        align-items: center;
+
+                        >img {
+                            padding-left: 70px;
+                        }
+                    }
+
+                    >nav {
+                        width: 50%;
+
+                        >ul {
+                            width: 100%;
+                            height: 100%;
+                            // @extend %bgt;
+                            display: flex;
+
+                            >li {
+                                width: 100%;
+                                height: 100%;
+                                // background-color: blue;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                // margin: 0 5px;
+                                &:first-of-type {
+                                    >a {
+                                        color: rgb(255, 208, 0);
+                                    }
+                                }
+
+                                >a {
+                                    color: white;
+                                    text-transform: uppercase;
+                                    font-size: 18px;
+                                    transition: .4s;
+
+                                    &:hover {
+                                        color: rgb(255, 208, 0);
+                                    }
+
+                                }
+                            }
+
+                        }
+                    }
+
+                    >div {
+                        width: 20%;
+                        display: flex;
+                        // justify-content: center;
+                        align-items: center;
+
+                        >div {
+                            width: 150px;
+                            height: 40px;
+                            border-radius: 10px;
+                            background-color: rgb(255, 208, 0);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-left: 15px;
+                            transition: .4s;
+
+                            &:hover {
+                                background-color: yellow;
+                            }
+
+                            >a {
+                                text-transform: capitalize;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        >hgroup {
+            width: 100%;
+            height: 15%;
+            // border: 2px solid white;
+            margin-top: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >h2 {
+                font-size: 70px;
+
+                &:first-of-type {
+                    color: rgb(255, 208, 0);
+                }
+
+                &:last-of-type {
+                    color: white;
+                }
+            }
+        }
+
+        >div {
+            width: 100%;
+            height: 5%;
+            // border: 2px solid crimson;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >p {
+                color: white;
+                font-size: 30px;
+            }
+        }
+
+        >section {
+            width: 80%;
+            height: 70%;
+            // border: 3px solid chartreuse;
+            margin-top: 90px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.267);
+
+            >.row {
+                height: 100%;
+
+                // @extend %bgt;
+                >div {
+                    height: 100%;
+
+                    // border: 2px solid brown;
+                    &:first-of-type {
+                        width: 35%;
+                        background-color: rgb(255, 208, 0);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        >hgroup {
+                            width: 50%;
+                            height: 50%;
+
+                            // border: 1px solid white;
+                            >* {
+                                text-align: center;
+                            }
+
+                            >h4 {
+                                color: white;
+                                font-size: 20px;
+                                text-transform: uppercase;
+
+                                &:first-of-type {
+                                    padding-top: 10px;
+                                }
+                            }
+
+                            >h3 {
+                                font-size: 50px;
+                                text-transform: capitalize;
+                                color: white;
+                            }
+
+                            >h2 {
+                                font-size: 90px;
+                            }
+
+                        }
+                    }
+
+                    &:last-of-type {
+                        width: 65%;
+                        background-color: white;
+                        display: flex;
+
+                        >form {
+                            width: 50%;
+                            height: 100%;
+                            // @extend %bt1;
+                            position: relative;
+
+                            >input {
+                                width: 95%;
+                                height: 50px;
+                                margin-top: 70px;
+                                margin-left: 5px;
+                                outline: none;
+
+
+                            }
+
+                            >label {
+                                position: absolute;
+                                color: rgb(71, 71, 71);
+                                top: 45px;
+                                left: 7px;
+
+                                &:nth-of-type(2) {
+                                    top: 165px;
+                                    left: 7px;
+                                }
+
+                                &:nth-of-type(3) {
+                                    top: 286px;
+                                    left: 7px;
+                                }
+                            }
+
+                            >p {
+                                // font-size: 18px;
+                                color: rgb(71, 71, 71);
+                                position: absolute;
+                                left: 7px;
+                                bottom: 40px;
+                            }
+
+                            >div {
+                                width: 150px;
+                                height: 40px;
+                                background-color: rgb(255, 208, 0);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 5px;
+                                position: absolute;
+                                left: 7px;
+                                bottom: 30px;
+                                transition: .4s;
+
+                                &:hover {
+                                    background-color: yellow;
+                                }
+
+                                >a {
+                                    font-size: 18px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// end para1***************
+
+.para2 {
+    width: 100%;
+    height: 130vh;
+
+    // @extend %bt1;
+    >.row {
+        height: 100%;
+        // @extend %bt2;
+        justify-content: center;
+        align-items: center;
+
+        >div {
+            width: 90%;
+            height: 60%;
+            // @extend %bt1;
+            margin-top: 250px;
+
+            >.row {
+                width: 100%;
+                height: 100%;
+                // @extend %bt2;
+                justify-content: space-evenly;
+
+                >div {
+                    width: 28%;
+                    height: 100%;
+                    border: 1px solid rgb(185, 185, 185);
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.103);
+
+                    >div {
+                        width: 100%;
+                        height: 30%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // border: 1px solid black;
+                        margin-top: 20px;
+
+                        >i {
+                            color: rgb(255, 208, 0);
+                            transform: scale(8);
+
+                        }
+                    }
+
+                    >hgroup {
+                        width: 100%;
+                        height: 60%;
+
+                        // border: 2px solid red;
+                        >* {
+                            text-align: center;
+
+                        }
+
+                        >h2 {
+                            font-size: 40px;
+
+                            &:last-of-type {
+                                font-size: 60px;
+                                color: rgb(255, 208, 0);
+                            }
+                        }
+
+                        >h4 {
+                            color: rgb(170, 170, 170);
+
+                            &:last-of-type {
+                                color: rgb(66, 66, 66);
+                                padding-top: 20px;
+                            }
+                        }
+
+                        >p {
+                            color: grey;
+                            padding-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// evd para2@@@@@@@@@@@@@@@@@@
+
+.para3 {
+    width: 100%;
+    height: 110vh;
+
+    // @extend %bt1;
+    >.row {
+        height: 100%;
+
+        // @extend %bt2;
+        >div {
+            width: 100%;
+
+            // border: 2px solid crimson;
+            &:first-of-type {
+                height: 35%;
+                background-image: url(../img/avada-taxi-stats-background.jpg);
+                background-size: cover;
+
+                >.row {
+                    width: 100%;
+                    height: 100%;
+                    // border: 2px solid salmon;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    >div {
+                        width: 350px;
+                        height: 200px;
+                        border: 1px solid rgb(78, 77, 77);
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        >div {
+                            width: 60%;
+                            height: 60%;
+
+                            // border: 2px solid palevioletred;
+                            >* {
+                                color: white;
+                                text-align: center;
+                            }
+
+                            >h2 {
+
+                                font-size: 70px;
+                            }
+
+                            >h4 {
+
+                                font-size: 20px;
+                                text-transform: uppercase;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            &:last-of-type {
+                height: 65%;
+                background-color: rgba(255, 208, 0, 0.767);
+
+                >.row {
+                    height: 100%;
+
+                    // border: 2px solid blue;
+                    >div {
+                        width: 50%;
+                        height: 100%;
+
+                        // border: 2px solid violet;
+                        &:first-of-type {
+                            >hgroup {
+                                width: 100%;
+                                height: 40%;
+                                // border: 2px solid rgb(255, 255, 255);
+                                margin-top: 90px;
+
+                                >* {
+                                    padding-left: 70px;
+                                }
+
+                                >h2 {
+                                    color: rgb(65, 65, 65);
+                                    font-size: 50px;
+                                }
+
+                                >P {
+                                    font-size: 20px;
+
+                                    padding-top: 30px;
+                                }
+                            }
+
+                            >div {
+                                width: 100%;
+                                height: 20%;
+                                // border: 2px solid black;
+                                margin-top: 50px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+
+                                >figure {
+                                    width: 250px;
+                                    height: 80px;
+                                    // border: 2px solid black;
+                                    border-radius: 10px;
+
+                                    >img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:last-of-type {
+                            position: relative;
+
+                            >figure {
+                                width: 70%;
+                                height: 90%;
+                                // border: 2px solid seagreen;
+                                position: absolute;
+                                left: 60px;
+                                bottom: 0;
+
+                                >img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+// end para3////////////////////
+
+.para4 {
+    width: 100%;
+    height: 110vh;
+    // @extend %bt1;
+
+    >.row {
+        width: 100%;
+        height: 100%;
+        // @extend %bt2;
+
+        >div {
+            width: 100%;
+            // @extend %bt1;
+
+            &:nth-of-type(1) {
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                >h1 {
+                    color: rgb(54, 54, 54);
+                    font-size: 50px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                height: 70%;
+                display: flex;
+                justify-content: space-evenly;
+
+                >article {
+                    width: 45%;
+                    height: 100%;
+                    // @extend %bt2;
+                    transition: .4s;
+                    &:hover{
+                        transform: scale(1.03);
+                    }
+
+                    >figure {
+                        width: 100%;
+                        height: 80%;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        >figcaption {
+                            font-size: 18px;
+                            color: rgb(83, 83, 83);
+                            padding-left: 5px;
+                            padding-top: 10px;
+                            transition: .4s;
+
+                            &:hover {
+                                color: rgb(255, 208, 0);
+                            }
+                        }
+                    }
+
+                    >div {
+                        width: 100%;
+                        height: 30px;
+                        // border: 2px solid black;
+                        display: flex;
+                        margin-top: 40px;
+
+                        >h5 {
+                            color: rgb(46, 46, 46);
+
+                            padding-right: 10px;
+                            padding-left: 5px;
+
+                        }
+                        >a{
+                            font-size: 13px;
+                            transition: .4s;
+                            color: rgb(46, 46, 46);
+                            &:hover{
+                                color: rgb(255, 208, 0);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+                height: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >div{
+                    width: 300px;
+                    height: 40px;
+                    background-color: rgb(255, 208, 0);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    transition: .4s;
+                    &:hover{
+                        background-color: yellow;
+                    }
+                    >a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end para4................................
+
+.para5{
+    width: 100%;
+    height: 110vh;
+    // @extend %bt1;
+    >.row{
+        width: 100%;
+        height: 100%;
+        // @extend %bt2;
+        background-image: url(../img/avada-taxi-testimonials-background.jpg);
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-content: space-evenly;
+        >div{
+            width: 20%;
+            height: 90%;
+            // border: 2px solid salmon;
+            &:first-of-type{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-image: url(../img/avada-taxi-book-now-background.jpg);
+                position: relative;
+                border-radius: 10px;
+                >hgroup {
+                    width: 70%;
+                    height: 50%;
+
+                    // border: 1px solid white;
+                    >* {
+                        text-align: center;
+                    }
+
+                    >h4 {
+                        color: white;
+                        font-size: 20px;
+                        text-transform: uppercase;
+
+                        &:first-of-type {
+                            padding-top: 10px;
+                        }
+                    }
+
+                    >h3 {
+                        font-size: 50px;
+                        text-transform: capitalize;
+                        color: white;
+                    }
+
+                    >h2 {
+                        font-size: 90px;
+                    }
+
+                }
+                >div{
+                    width: 150px;
+                    height: 40px;
+                    background-color: rgb(255, 208, 0);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    transition: .4s;
+                    position: absolute;
+                    bottom: 100px;
+                   
+                    &:hover{
+                        background-color: yellow;
+                    }
+                }
+            }
+            &:nth-of-type(2),
+            &:nth-of-type(3),
+            &:nth-of-type(4){
+                >div {
+                    width: 100%;
+                    height: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // border: 1px solid black;
+                    margin-top: 20px;
+
+                    >i {
+                        color: rgb(255, 208, 0);
+                        transform: scale(8);
+
+                    }
+                }
+
+                >hgroup {
+                    width: 100%;
+                    height: 60%;
+
+                    // border: 2px solid red;
+                    >* {
+                        text-align: center;
+
+                    }
+
+                    >h2 {
+                        font-size: 40px;
+                        color: white;
+
+                        &:last-of-type {
+                            font-size: 60px;
+                            color: rgb(255, 208, 0);
+                        }
+                    }
+
+                    >h4 {
+                        color: rgb(170, 170, 170);
+
+                        &:last-of-type {
+                            color: rgb(66, 66, 66);
+                            padding-top: 20px;
+                        }
+                    }
+
+                    >p {
+                        color: grey;
+                        padding-top: 30px;
+                    }
+                }
+            }
+          
+        }
+
+    }
+}
+
+footer{
+    width: 100%;
+    height: 70vh;
+    // border: 2px solid red;
+    >.row{
+     
+      
+        height: 100%;
+        // border: 2px solid green;
+        >div{
+            height: 100%;
+            // border: 2px solid crimson;
+            &:first-of-type{
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .circle{
+                    width: 400px;
+                    height: 400px;
+                    border-radius: 50%;
+                    // border: 2px solid blue;
+                    position: relative;
+                    background-color: rgb(58, 58, 58);
+                    transition: .4s;
+                    &:hover{
+                        box-shadow: 0 0 5px 15px rgba(0, 0, 0, 0.219);
+                    }
+                    >div{
+                        position: absolute;
+                        border-radius: 50%;
+                        // border: 2px solid yellow;
+                        &:first-of-type{
+                            width: 320px;
+                            height: 320px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            background-color: white;
+
+                        }
+                        &:last-of-type{
+                            width: 260px;
+                            height: 260px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            
+                            
+                            &::after{
+                                content: '';
+                                display: flex;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, 0.349);
+                                z-index: 1;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                border-radius: 50%;
+                            }
+                            >figure{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                               
+                               
+                                >img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    transform: scale(1.1);
+                                    position: absolute;
+                                    top: 10px;
+                                    left: 0;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+            &:last-of-type{
+                width: 60%;
+                >h2{
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    padding-top: 150px;
+                    padding-left: 10px;
+                    background-clip: text;
+                    background-clip: -webkit-text;
+                    color: transparent;
+                    background-image: linear-gradient(120deg, rgb(19, 19, 19) 40%, rgb(65, 65, 65), rgb(99, 99, 99));
+                    transition: 1s;
+                    &:hover{
+                        background-position: 750px;
+                    }
+        
+                }
+                >nav{
+                    width: 300px;
+                    height: 50px;
+                    // background-color: aqua;
+                    margin-top: 20px;
+                    >ul{
+                        width: 100%;
+                        height: 100%;
+                        // background-color: green;
+                        display: flex;
+                        // justify-content: center;
+                        align-items: center;
+                        >li{
+                            list-style-type: none;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            border: 1px solid black;
+                            margin: 0 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: .4s;
+                            &:hover{
+                                box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.301);
+                            }
+                            >a{
+                                font-size: 25px;
+                                color: black;
+                                text-decoration: none;
+                                
+                            }
+                        }
+                    }
+                }
+                >div{
+                    width: 100%;
+                    height: 10%;
+                    // border: 2px solid green;
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    >a{
+                        text-decoration: none;
+                        color: black;
+                     
+                        font-size: 20px;
+                        transition: .4s;
+                        &:hover{
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
