@@ -3,9 +3,9 @@
 
 
 
-![viewfinal](https://user-images.githubusercontent.com/109727844/204102879-086fee63-9bda-43b2-a1aa-49879c3f2d39.jpg)
+![taxi1](https://github.com/asalyaraki/Taxi/assets/155806762/fd5cb59e-8b61-4779-bb87-62eb9104d7eb)
 
-![view final](https://user-images.githubusercontent.com/109727844/204102930-fac80657-4d16-4816-b476-a88e984abefe.jpg)
+![taxi2](https://github.com/asalyaraki/Taxi/assets/155806762/e279ceac-8143-4e0d-be26-babf6a708a54)
 
 - [Demo Project](https://asalyaraki.github.io/Taxi/)
 
